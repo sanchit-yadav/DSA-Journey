@@ -1,59 +1,85 @@
 # DSA With Python
 
-Daily practice solutions for learning data structures and algorithms with Python.
+Daily practice solutions for learning data structures and algorithms with
+Python. The repository is organized by subject and grows as new concepts are
+covered.
 
-## Topics
+## Project structure
 
-| Topic | Problems |
+```text
+.
+|-- Basics of Programming
+|   |-- Basic Math
+|   |   |-- armstrong_number.py
+|   |   |-- palindrome.py
+|   |   |-- print_divisors.py
+|   |   `-- README.md
+|   |-- Intro_to_hashing
+|   |   `-- store_frequency_in_dictionary.py
+|   `-- Recursion
+|       |-- factorial.py
+|       `-- Is_str_Palindrome.py
+`-- Sorting-Algorithms
+    |-- Bubble_sort.py
+    `-- Selection-Sort
+        |-- ascending_ord.py
+        `-- descending_ord.py
+```
+
+## Topics covered
+
+| Area | Problems and implementations |
 | --- | --- |
-| Basic Math | [Palindrome number](<Basic Math/palindrome.py>), [Armstrong number](<Basic Math/armstrong_number.py>), [Print divisors](<Basic Math/print_divisors.py>) |
+| Basic Math | [Palindrome number](<Basics of Programming/Basic Math/palindrome.py>), [Armstrong number](<Basics of Programming/Basic Math/armstrong_number.py>), [Print divisors](<Basics of Programming/Basic Math/print_divisors.py>) |
+| Recursion | [Factorial](<Basics of Programming/Recursion/factorial.py>), [String palindrome](<Basics of Programming/Recursion/Is_str_Palindrome.py>) |
+| Hashing | [Frequency counting with a dictionary](<Basics of Programming/Intro_to_hashing/store_frequency_in_dictionary.py>) |
+| Sorting | [Bubble sort](<Sorting-Algorithms/Bubble_sort.py>), [Selection sort - ascending](<Sorting-Algorithms/Selection-Sort/ascending_ord.py>), [Selection sort - descending](<Sorting-Algorithms/Selection-Sort/descending_ord.py>) |
 
-## Complexity notes
+Detailed notes for the Basic Math problems are available in the
+[Basic Math README](<Basics of Programming/Basic Math/README.md>).
 
-| Problem | Time | Space |
+## Complexity overview
+
+| Implementation | Time | Space |
 | --- | --- | --- |
-| Palindrome number | O(d) | O(1) |
-| Armstrong number | O(d) | O(d) |
-| Print divisors | O(sqrt(n) + k log k) | O(k) |
+| Basic Math palindrome | `O(d)` | `O(1)` |
+| Armstrong number | `O(d)` | `O(d)` |
+| Print divisors | `O(sqrt(n) + k log k)` | `O(k)` |
+| Recursive factorial | `O(n)` | `O(n)` |
+| Recursive string palindrome | `O(n)` | `O(n)` |
+| Frequency counting | `O(n)` average | `O(k)` |
+| Bubble sort | `O(n^2)` worst case | `O(1)` |
+| Selection sort | `O(n^2)` | `O(1)` |
 
-## Project conventions
-
-- Use descriptive, lowercase `snake_case` filenames for new solutions.
-- Put the main logic in a reusable function.
-- Keep command-line input/output inside `if __name__ == "__main__":`.
-- Keep a problem statement, approach, and complexity analysis in each topic
-  folder's `README.md`.
-- Add short comments for non-obvious algorithm steps.
-- Do not commit generated files such as `__pycache__`; these are excluded by `.gitignore`.
+Here, `d` is the number of digits, `n` is the input size, and `k` is the
+number of distinct values or divisors as applicable.
 
 ## Running a solution
 
-From the repository root:
+Run commands from the repository root. Scripts that request input will prompt
+for it; the sorting scripts use built-in example arrays.
 
 ```powershell
-python "Basic Math\palindrome.py"
-python "Basic Math\armstrong_number.py"
-python "Basic Math\print_divisors.py"
+python "Basics of Programming\Basic Math\palindrome.py"
+python "Basics of Programming\Recursion\factorial.py"
+python "Basics of Programming\Recursion\Is_str_Palindrome.py"
+python "Sorting-Algorithms\Bubble_sort.py"
+python "Sorting-Algorithms\Selection-Sort\ascending_ord.py"
 ```
 
-## Uploading to GitHub
-
-Create a new empty repository on GitHub, then run these commands from this folder:
+The hashing example builds a frequency dictionary from its `nums` list. It
+currently has no print statement, so run it when inspecting or extending the
+example:
 
 ```powershell
-git init
-git add .
-git commit -m "Add basic math DSA practice"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-git push -u origin main
+python "Basics of Programming\Intro_to_hashing\store_frequency_in_dictionary.py"
 ```
 
-For future practice:
+## Conventions
 
-```powershell
-git status
-git add .
-git commit -m "Add <problem name> solution"
-git push
-```
+- Use descriptive, lowercase `snake_case` filenames for new solutions.
+- Put reusable logic in functions where practical.
+- Keep command-line input/output inside `if __name__ == "__main__":`.
+- Add short comments only for non-obvious algorithm steps.
+- Do not commit generated files such as `__pycache__`; these are excluded by
+  `.gitignore`.
