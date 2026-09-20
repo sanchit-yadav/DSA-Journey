@@ -19,10 +19,14 @@ covered.
 |   `-- Recursion
 |       |-- factorial.py
 |       `-- Is_str_Palindrome.py
+|-- List & Array Leetcode Problem
+|   `-- A) Easy Level Problems
+|       `-- Largest_element_in_array.py
 `-- Sorting-Algorithms
     |-- Bubble_sort.py
     |-- Insertion_Sort.py
     |-- Merge_Sort.py
+    |-- Quick_Sort.py
     `-- Selection-Sort
         |-- ascending_ord.py
         `-- descending_ord.py
@@ -35,7 +39,8 @@ covered.
 | Basic Math | [Palindrome number](<Basics of Programming/Basic Math/palindrome.py>), [Armstrong number](<Basics of Programming/Basic Math/armstrong_number.py>), [Print divisors](<Basics of Programming/Basic Math/print_divisors.py>) |
 | Recursion | [Factorial](<Basics of Programming/Recursion/factorial.py>), [String palindrome](<Basics of Programming/Recursion/Is_str_Palindrome.py>) |
 | Hashing | [Frequency counting with a dictionary](<Basics of Programming/Intro_to_hashing/store_frequency_in_dictionary.py>) |
-| Sorting | [Bubble sort](<Sorting-Algorithms/Bubble_sort.py>), [Insertion sort](<Sorting-Algorithms/Insertion_Sort.py>), [Merge sort](<Sorting-Algorithms/Merge_Sort.py>), [Selection sort - ascending](<Sorting-Algorithms/Selection-Sort/ascending_ord.py>), [Selection sort - descending](<Sorting-Algorithms/Selection-Sort/descending_ord.py>) |
+| Lists and Arrays | [Largest element](<List & Array Leetcode Problem/A) Easy Level Problems/Largest_element_in_array.py>) |
+| Sorting | [Bubble sort](<Sorting-Algorithms/Bubble_sort.py>), [Insertion sort](<Sorting-Algorithms/Insertion_Sort.py>), [Merge sort](<Sorting-Algorithms/Merge_Sort.py>), [Quick sort](<Sorting-Algorithms/Quick_Sort.py>), [Selection sort - ascending](<Sorting-Algorithms/Selection-Sort/ascending_ord.py>), [Selection sort - descending](<Sorting-Algorithms/Selection-Sort/descending_ord.py>) |
 
 Detailed notes for the Basic Math problems are available in the
 [Basic Math README](<Basics of Programming/Basic Math/README.md>).
@@ -50,9 +55,11 @@ Detailed notes for the Basic Math problems are available in the
 | Recursive factorial | `O(n)` | `O(n)` |
 | Recursive string palindrome | `O(n)` | `O(n)` |
 | Frequency counting | `O(n)` average | `O(k)` |
+| Largest element in an array | `O(n)` | `O(1)` |
 | Bubble sort | `O(n^2)` worst case | `O(1)` |
 | Insertion sort | `O(n^2)` worst case | `O(1)` |
 | Merge sort | `O(n log n)` | `O(n)` |
+| Quick sort | `O(n log n)` average, `O(n^2)` worst case | `O(n log n)` for this implementation |
 | Selection sort | `O(n^2)` | `O(1)` |
 
 Here, `d` is the number of digits, `n` is the input size, and `k` is the
@@ -70,7 +77,9 @@ python "Basics of Programming\Recursion\Is_str_Palindrome.py"
 python "Sorting-Algorithms\Bubble_sort.py"
 python "Sorting-Algorithms\Insertion_Sort.py"
 python "Sorting-Algorithms\Merge_Sort.py"
+python "Sorting-Algorithms\Quick_Sort.py"
 python "Sorting-Algorithms\Selection-Sort\ascending_ord.py"
+python "List & Array Leetcode Problem\A) Easy Level Problems\Largest_element_in_array.py"
 ```
 
 The hashing example builds a frequency dictionary from its `nums` list. It
