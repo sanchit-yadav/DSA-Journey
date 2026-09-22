@@ -21,7 +21,9 @@ covered.
 |       `-- Is_str_Palindrome.py
 |-- List & Array Leetcode Problem
 |   `-- A) Easy Level Problems
-|       `-- Largest_element_in_array.py
+|       |-- Largest_element_in_array.py
+|       |-- Remove_Duplicate.py
+|       `-- Second_Largest.py
 `-- Sorting-Algorithms
     |-- Bubble_sort.py
     |-- Insertion_Sort.py
@@ -39,7 +41,7 @@ covered.
 | Basic Math | [Palindrome number](<Basics of Programming/Basic Math/palindrome.py>), [Armstrong number](<Basics of Programming/Basic Math/armstrong_number.py>), [Print divisors](<Basics of Programming/Basic Math/print_divisors.py>) |
 | Recursion | [Factorial](<Basics of Programming/Recursion/factorial.py>), [String palindrome](<Basics of Programming/Recursion/Is_str_Palindrome.py>) |
 | Hashing | [Frequency counting with a dictionary](<Basics of Programming/Intro_to_hashing/store_frequency_in_dictionary.py>) |
-| Lists and Arrays | [Largest element](<List & Array Leetcode Problem/A) Easy Level Problems/Largest_element_in_array.py>) |
+| Lists and Arrays | [Largest element](<List & Array Leetcode Problem/A) Easy Level Problems/Largest_element_in_array.py>), [Remove duplicates](<List & Array Leetcode Problem/A) Easy Level Problems/Remove_Duplicate.py>), [Second largest element](<List & Array Leetcode Problem/A) Easy Level Problems/Second_Largest.py>) |
 | Sorting | [Bubble sort](<Sorting-Algorithms/Bubble_sort.py>), [Insertion sort](<Sorting-Algorithms/Insertion_Sort.py>), [Merge sort](<Sorting-Algorithms/Merge_Sort.py>), [Quick sort](<Sorting-Algorithms/Quick_Sort.py>), [Selection sort - ascending](<Sorting-Algorithms/Selection-Sort/ascending_ord.py>), [Selection sort - descending](<Sorting-Algorithms/Selection-Sort/descending_ord.py>) |
 
 Detailed notes for the Basic Math problems are available in the
@@ -56,6 +58,8 @@ Detailed notes for the Basic Math problems are available in the
 | Recursive string palindrome | `O(n)` | `O(n)` |
 | Frequency counting | `O(n)` average | `O(k)` |
 | Largest element in an array | `O(n)` | `O(1)` |
+| Second largest element | `O(n)` | `O(1)` |
+| Remove duplicates from a sorted array | `O(n)` | `O(1)` |
 | Bubble sort | `O(n^2)` worst case | `O(1)` |
 | Insertion sort | `O(n^2)` worst case | `O(1)` |
 | Merge sort | `O(n log n)` | `O(n)` |
@@ -64,6 +68,10 @@ Detailed notes for the Basic Math problems are available in the
 
 Here, `d` is the number of digits, `n` is the input size, and `k` is the
 number of distinct values or divisors as applicable.
+
+The remove-duplicates solution expects the input array to be sorted and
+compacts unique values at the beginning of the same array. The second-largest
+solution returns the second distinct largest value.
 
 ## Running a solution
 
@@ -80,6 +88,8 @@ python "Sorting-Algorithms\Merge_Sort.py"
 python "Sorting-Algorithms\Quick_Sort.py"
 python "Sorting-Algorithms\Selection-Sort\ascending_ord.py"
 python "List & Array Leetcode Problem\A) Easy Level Problems\Largest_element_in_array.py"
+python "List & Array Leetcode Problem\A) Easy Level Problems\Second_Largest.py"
+python "List & Array Leetcode Problem\A) Easy Level Problems\Remove_Duplicate.py"
 ```
 
 The hashing example builds a frequency dictionary from its `nums` list. It
