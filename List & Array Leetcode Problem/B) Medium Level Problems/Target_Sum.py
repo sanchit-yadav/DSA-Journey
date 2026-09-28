@@ -15,4 +15,4 @@ if __name__ == "__main__":
     arr = [2, 7, 11, 1, 15]
     target = 12
     result = Two_sum(arr, target)
-    print(result)  # Output: [0, 1]
+    print(result)

@@ -20,10 +20,19 @@ covered.
 |       |-- factorial.py
 |       `-- Is_str_Palindrome.py
 |-- List & Array Leetcode Problem
-|   `-- A) Easy Level Problems
-|       |-- Largest_element_in_array.py
-|       |-- Remove_Duplicate.py
-|       `-- Second_Largest.py
+|   |-- A) Easy Level Problems
+|   |   |-- Largest_element_in_array.py
+|   |   |-- Linear_Search.py
+|   |   |-- Max_Consecutive_One.py
+|   |   |-- Merge_2_sorted_arr.py
+|   |   |-- Missing_Number.py
+|   |   |-- Move_zeros.py
+|   |   |-- Remove_Duplicate.py
+|   |   |-- Right_rotate_Array.py
+|   |   `-- Second_Largest.py
+|   `-- B) Medium Level Problems
+|       |-- Subarray_max_sum.py
+|       `-- Two_Sum.py
 `-- Sorting-Algorithms
     |-- Bubble_sort.py
     |-- Insertion_Sort.py
@@ -41,7 +50,8 @@ covered.
 | Basic Math | [Palindrome number](<Basics of Programming/Basic Math/palindrome.py>), [Armstrong number](<Basics of Programming/Basic Math/armstrong_number.py>), [Print divisors](<Basics of Programming/Basic Math/print_divisors.py>) |
 | Recursion | [Factorial](<Basics of Programming/Recursion/factorial.py>), [String palindrome](<Basics of Programming/Recursion/Is_str_Palindrome.py>) |
 | Hashing | [Frequency counting with a dictionary](<Basics of Programming/Intro_to_hashing/store_frequency_in_dictionary.py>) |
-| Lists and Arrays | [Largest element](<List & Array Leetcode Problem/A) Easy Level Problems/Largest_element_in_array.py>), [Remove duplicates](<List & Array Leetcode Problem/A) Easy Level Problems/Remove_Duplicate.py>), [Second largest element](<List & Array Leetcode Problem/A) Easy Level Problems/Second_Largest.py>) |
+| Lists and Arrays - Easy | [Largest element](<List & Array Leetcode Problem/A) Easy Level Problems/Largest_element_in_array.py>), [Linear search](<List & Array Leetcode Problem/A) Easy Level Problems/Linear_Search.py>), [Maximum consecutive ones](<List & Array Leetcode Problem/A) Easy Level Problems/Max_Consecutive_One.py>), [Merge two sorted arrays without duplicates](<List & Array Leetcode Problem/A) Easy Level Problems/Merge_2_sorted_arr.py>), [Missing number](<List & Array Leetcode Problem/A) Easy Level Problems/Missing_Number.py>), [Move zeros](<List & Array Leetcode Problem/A) Easy Level Problems/Move_zeros.py>), [Remove duplicates](<List & Array Leetcode Problem/A) Easy Level Problems/Remove_Duplicate.py>), [Right rotate array](<List & Array Leetcode Problem/A) Easy Level Problems/Right_rotate_Array.py>), [Second largest element](<List & Array Leetcode Problem/A) Easy Level Problems/Second_Largest.py>) |
+| Lists and Arrays - Medium | [Maximum subarray sum](<List & Array Leetcode Problem/B) Medium Level Problems/Subarray_max_sum.py>), [Two Sum](<List & Array Leetcode Problem/B) Medium Level Problems/Two_Sum.py>) |
 | Sorting | [Bubble sort](<Sorting-Algorithms/Bubble_sort.py>), [Insertion sort](<Sorting-Algorithms/Insertion_Sort.py>), [Merge sort](<Sorting-Algorithms/Merge_Sort.py>), [Quick sort](<Sorting-Algorithms/Quick_Sort.py>), [Selection sort - ascending](<Sorting-Algorithms/Selection-Sort/ascending_ord.py>), [Selection sort - descending](<Sorting-Algorithms/Selection-Sort/descending_ord.py>) |
 
 Detailed notes for the Basic Math problems are available in the
@@ -58,8 +68,16 @@ Detailed notes for the Basic Math problems are available in the
 | Recursive string palindrome | `O(n)` | `O(n)` |
 | Frequency counting | `O(n)` average | `O(k)` |
 | Largest element in an array | `O(n)` | `O(1)` |
+| Linear search | `O(n)` | `O(1)` |
+| Maximum consecutive ones | `O(n)` | `O(1)` |
+| Merge two sorted arrays without duplicates | `O(n + m)` | `O(n + m)` |
+| Missing number (current implementation) | `O(n^2)` | `O(1)` |
+| Move zeros | `O(n)` | `O(1)` |
 | Second largest element | `O(n)` | `O(1)` |
 | Remove duplicates from a sorted array | `O(n)` | `O(1)` |
+| Right rotate array | `O(n)` | `O(n)` |
+| Maximum subarray sum | `O(n)` | `O(1)` |
+| Two Sum | `O(n)` average | `O(n)` |
 | Bubble sort | `O(n^2)` worst case | `O(1)` |
 | Insertion sort | `O(n^2)` worst case | `O(1)` |
 | Merge sort | `O(n log n)` | `O(n)` |
@@ -88,8 +106,16 @@ python "Sorting-Algorithms\Merge_Sort.py"
 python "Sorting-Algorithms\Quick_Sort.py"
 python "Sorting-Algorithms\Selection-Sort\ascending_ord.py"
 python "List & Array Leetcode Problem\A) Easy Level Problems\Largest_element_in_array.py"
+python "List & Array Leetcode Problem\A) Easy Level Problems\Linear_Search.py"
+python "List & Array Leetcode Problem\A) Easy Level Problems\Max_Consecutive_One.py"
+python "List & Array Leetcode Problem\A) Easy Level Problems\Merge_2_sorted_arr.py"
+python "List & Array Leetcode Problem\A) Easy Level Problems\Missing_Number.py"
+python "List & Array Leetcode Problem\A) Easy Level Problems\Move_zeros.py"
 python "List & Array Leetcode Problem\A) Easy Level Problems\Second_Largest.py"
 python "List & Array Leetcode Problem\A) Easy Level Problems\Remove_Duplicate.py"
+python "List & Array Leetcode Problem\A) Easy Level Problems\Right_rotate_Array.py"
+python "List & Array Leetcode Problem\B) Medium Level Problems\Subarray_max_sum.py"
+python "List & Array Leetcode Problem\B) Medium Level Problems\Two_Sum.py"
 ```
 
 The hashing example builds a frequency dictionary from its `nums` list. It
