@@ -34,6 +34,9 @@ covered.
 |       |-- Buy_sell_Stock.py
 |       |-- Longest_Consecutive_Seq.py
 |       |-- ReArrange_By_Sign.py
+|       |-- Rotate_Matrix.py
+|       |-- Set_Matrix_Zeros.py
+|       |-- Spiral_Order.py
 |       |-- Subarray_max_sum.py
 |       `-- Target_Sum.py
 `-- Sorting-Algorithms
@@ -54,7 +57,7 @@ covered.
 | Recursion | [Factorial](<Basics of Programming/Recursion/factorial.py>), [String palindrome](<Basics of Programming/Recursion/Is_str_Palindrome.py>) |
 | Hashing | [Frequency counting with a dictionary](<Basics of Programming/Intro_to_hashing/store_frequency_in_dictionary.py>) |
 | Lists and Arrays - Easy | [Largest element](<List & Array Leetcode Problem/A) Easy Level Problems/Largest_element_in_array.py>), [Linear search](<List & Array Leetcode Problem/A) Easy Level Problems/Linear_Search.py>), [Maximum consecutive ones](<List & Array Leetcode Problem/A) Easy Level Problems/Max_Consecutive_One.py>), [Merge two sorted arrays without duplicates](<List & Array Leetcode Problem/A) Easy Level Problems/Merge_2_sorted_arr.py>), [Missing number](<List & Array Leetcode Problem/A) Easy Level Problems/Missing_Number.py>), [Move zeros](<List & Array Leetcode Problem/A) Easy Level Problems/Move_zeros.py>), [Remove duplicates](<List & Array Leetcode Problem/A) Easy Level Problems/Remove_Duplicate.py>), [Right rotate array](<List & Array Leetcode Problem/A) Easy Level Problems/Right_rotate_Array.py>), [Second largest element](<List & Array Leetcode Problem/A) Easy Level Problems/Second_Largest.py>) |
-| Lists and Arrays - Medium | [Best time to buy and sell stock](<List & Array Leetcode Problem/B) Medium Level Problems/Buy_sell_Stock.py>), [Longest consecutive sequence](<List & Array Leetcode Problem/B) Medium Level Problems/Longest_Consecutive_Seq.py>), [Rearrange by sign](<List & Array Leetcode Problem/B) Medium Level Problems/ReArrange_By_Sign.py>), [Maximum subarray sum](<List & Array Leetcode Problem/B) Medium Level Problems/Subarray_max_sum.py>), [Two Sum](<List & Array Leetcode Problem/B) Medium Level Problems/Target_Sum.py>) |
+| Lists and Arrays - Medium | [Best time to buy and sell stock](<List & Array Leetcode Problem/B) Medium Level Problems/Buy_sell_Stock.py>), [Longest consecutive sequence](<List & Array Leetcode Problem/B) Medium Level Problems/Longest_Consecutive_Seq.py>), [Rearrange by sign](<List & Array Leetcode Problem/B) Medium Level Problems/ReArrange_By_Sign.py>), [Rotate matrix 90-degree clockwise](<List & Array Leetcode Problem/B) Medium Level Problems/Rotate_Matrix.py>), [Set matrix zeroes](<List & Array Leetcode Problem/B) Medium Level Problems/Set_Matrix_Zeros.py>), [Spiral order traversal](<List & Array Leetcode Problem/B) Medium Level Problems/Spiral_Order.py>), [Maximum subarray sum](<List & Array Leetcode Problem/B) Medium Level Problems/Subarray_max_sum.py>), [Two Sum](<List & Array Leetcode Problem/B) Medium Level Problems/Target_Sum.py>) |
 | Sorting | [Bubble sort](<Sorting-Algorithms/Bubble_sort.py>), [Insertion sort](<Sorting-Algorithms/Insertion_Sort.py>), [Merge sort](<Sorting-Algorithms/Merge_Sort.py>), [Quick sort](<Sorting-Algorithms/Quick_Sort.py>), [Selection sort - ascending](<Sorting-Algorithms/Selection-Sort/ascending_ord.py>), [Selection sort - descending](<Sorting-Algorithms/Selection-Sort/descending_ord.py>) |
 
 Detailed notes for the Basic Math problems are available in the
@@ -84,6 +87,9 @@ Detailed notes for the Basic Math problems are available in the
 | Best time to buy and sell stock | `O(n)` | `O(1)` |
 | Longest consecutive sequence | `O(n)` average | `O(n)` |
 | Rearrange by sign | `O(n)` | `O(n)` |
+| Rotate matrix 90 degrees clockwise | `O(n^2)` | `O(1)` |
+| Set matrix zeroes | `O(mn)` | `O(m + n)` |
+| Spiral order traversal | `O(mn)` | `O(mn)` including the returned list |
 | Bubble sort | `O(n^2)` worst case | `O(1)` |
 | Insertion sort | `O(n^2)` worst case | `O(1)` |
 | Merge sort | `O(n log n)` | `O(n)` |
@@ -125,6 +131,9 @@ python "List & Array Leetcode Problem\B) Medium Level Problems\Target_Sum.py"
 python "List & Array Leetcode Problem\B) Medium Level Problems\Buy_sell_Stock.py"
 python "List & Array Leetcode Problem\B) Medium Level Problems\Longest_Consecutive_Seq.py"
 python "List & Array Leetcode Problem\B) Medium Level Problems\ReArrange_By_Sign.py"
+python "List & Array Leetcode Problem\B) Medium Level Problems\Rotate_Matrix.py"
+python "List & Array Leetcode Problem\B) Medium Level Problems\Set_Matrix_Zeros.py"
+python "List & Array Leetcode Problem\B) Medium Level Problems\Spiral_Order.py"
 ```
 
 The hashing example builds a frequency dictionary from its `nums` list. It
