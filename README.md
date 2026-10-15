@@ -51,7 +51,7 @@ covered.
 |   `-- C) Hard Level Problems
 |       |-- 3Sum.py
 |       `-- 4Sum.py
-`-- Sorting-Algorithms
+|-- Sorting-Algorithms
     |-- Bubble_sort.py
     |-- Insertion_Sort.py
     |-- Merge_Sort.py
@@ -59,6 +59,17 @@ covered.
     `-- Selection-Sort
         |-- ascending_ord.py
         `-- descending_ord.py
+`-- Strings
+    |-- Easy_Level_Problems
+    |   |-- Isomorphic_String.py
+    |   |-- Largest_Odd_Number.py
+    |   |-- Longest_Common_Prefix.py
+    |   |-- Remove_outermost_paranthesis.py
+    |   |-- Reverse_Words.py
+    |   |-- Rotate_string.py
+    |   `-- Valid_Anagram.py
+    `-- Hard_Level_Problems
+        `-- Sort_By_Freq.py
 ```
 
 ## Topics covered
@@ -73,6 +84,8 @@ covered.
 | Lists and Arrays - Medium | [Best time to buy and sell stock](<List & Array Leetcode Problem/B) Medium Level Problems/Buy_sell_Stock.py>), [Longest consecutive sequence](<List & Array Leetcode Problem/B) Medium Level Problems/Longest_Consecutive_Seq.py>), [Rearrange by sign](<List & Array Leetcode Problem/B) Medium Level Problems/ReArrange_By_Sign.py>), [Rotate matrix 90-degree clockwise](<List & Array Leetcode Problem/B) Medium Level Problems/Rotate_Matrix.py>), [Set matrix zeroes](<List & Array Leetcode Problem/B) Medium Level Problems/Set_Matrix_Zeros.py>), [Spiral order traversal](<List & Array Leetcode Problem/B) Medium Level Problems/Spiral_Order.py>), [Maximum subarray sum](<List & Array Leetcode Problem/B) Medium Level Problems/Subarray_max_sum.py>), [Two Sum](<List & Array Leetcode Problem/B) Medium Level Problems/Target_Sum.py>) |
 | Lists and Arrays - Hard | [3Sum](<List & Array Leetcode Problem/C) Hard Level Problems/3Sum.py>), [4Sum](<List & Array Leetcode Problem/C) Hard Level Problems/4Sum.py>) |
 | Sorting | [Bubble sort](<Sorting-Algorithms/Bubble_sort.py>), [Insertion sort](<Sorting-Algorithms/Insertion_Sort.py>), [Merge sort](<Sorting-Algorithms/Merge_Sort.py>), [Quick sort](<Sorting-Algorithms/Quick_Sort.py>), [Selection sort - ascending](<Sorting-Algorithms/Selection-Sort/ascending_ord.py>), [Selection sort - descending](<Sorting-Algorithms/Selection-Sort/descending_ord.py>) |
+| Strings - Easy | [Isomorphic strings](<Strings/Easy_Level_Problems/Isomorphic_String.py>), [Largest odd number](<Strings/Easy_Level_Problems/Largest_Odd_Number.py>), [Longest common prefix](<Strings/Easy_Level_Problems/Longest_Common_Prefix.py>), [Remove outermost parentheses](<Strings/Easy_Level_Problems/Remove_outermost_paranthesis.py>), [Reverse words](<Strings/Easy_Level_Problems/Reverse_Words.py>), [Rotate string](<Strings/Easy_Level_Problems/Rotate_string.py>), [Valid anagram](<Strings/Easy_Level_Problems/Valid_Anagram.py>) |
+| Strings - Hard | [Sort characters by frequency](<Strings/Hard_Level_Problems/Sort_By_Freq.py>) |
 
 Detailed notes for the Basic Math problems are available in the
 [Basic Math README](<Basics of Programming/Basic Math/README.md>).
@@ -119,9 +132,18 @@ Detailed notes for the Basic Math problems are available in the
 | Merge sort | `O(n log n)` | `O(n)` |
 | Quick sort | `O(n log n)` average, `O(n^2)` worst case | `O(n log n)` for this implementation |
 | Selection sort | `O(n^2)` | `O(1)` |
+| Isomorphic strings | `O(n)` | `O(k)` |
+| Largest odd number from a numeric string | `O(n)` | `O(n)` including the returned substring |
+| Longest common prefix (current implementation) | `O(s m^2)` worst case | `O(m)` |
+| Remove outermost parentheses | `O(n)` | `O(n)` including the returned string |
+| Reverse words | `O(n)` | `O(n)` |
+| Rotate string | `O(n^2)` worst case | `O(n)` |
+| Valid anagram | `O(n)` | `O(k)` |
+| Sort characters by frequency | `O(n + k log k)` | `O(n + k)` |
 
-Here, `d` is the number of digits, `n` is the input size, and `k` is the
-number of distinct values or divisors as applicable.
+Here, `d` is the number of digits, `n` is the input size, `k` is the number of
+distinct values, and `s` and `m` are the number of strings and maximum string
+length for the longest-common-prefix implementation.
 
 The remove-duplicates solution expects the input array to be sorted and
 compacts unique values at the beginning of the same array. The second-largest
@@ -168,6 +190,14 @@ python "List & Array Leetcode Problem\B) Medium Level Problems\Set_Matrix_Zeros.
 python "List & Array Leetcode Problem\B) Medium Level Problems\Spiral_Order.py"
 python "List & Array Leetcode Problem\C) Hard Level Problems\3Sum.py"
 python "List & Array Leetcode Problem\C) Hard Level Problems\4Sum.py"
+python "Strings\Easy_Level_Problems\Isomorphic_String.py"
+python "Strings\Easy_Level_Problems\Largest_Odd_Number.py"
+python "Strings\Easy_Level_Problems\Longest_Common_Prefix.py"
+python "Strings\Easy_Level_Problems\Remove_outermost_paranthesis.py"
+python "Strings\Easy_Level_Problems\Reverse_Words.py"
+python "Strings\Easy_Level_Problems\Rotate_string.py"
+python "Strings\Easy_Level_Problems\Valid_Anagram.py"
+python "Strings\Hard_Level_Problems\Sort_By_Freq.py"
 ```
 
 The hashing example builds a frequency dictionary from its `nums` list. It
