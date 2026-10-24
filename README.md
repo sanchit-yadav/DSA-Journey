@@ -55,7 +55,11 @@ covered.
 |   |-- Introduction
 |   |   `-- Basic-tasks.py
 |   `-- Medium Problems
-|       `-- Middle_Of_LL.py
+|       |-- Cycle_Length.py
+|       |-- Cycle_Starting.py
+|       |-- Detect_Cycle.py
+|       |-- Middle_Of_LL.py
+|       `-- Reverse_LL.py
 |-- Sorting-Algorithms
     |-- Bubble_sort.py
     |-- Insertion_Sort.py
@@ -90,7 +94,7 @@ covered.
 | Lists and Arrays - Easy | [Largest element](<List & Array Leetcode Problem/A) Easy Level Problems/Largest_element_in_array.py>), [Linear search](<List & Array Leetcode Problem/A) Easy Level Problems/Linear_Search.py>), [Maximum consecutive ones](<List & Array Leetcode Problem/A) Easy Level Problems/Max_Consecutive_One.py>), [Merge two sorted arrays without duplicates](<List & Array Leetcode Problem/A) Easy Level Problems/Merge_2_sorted_arr.py>), [Missing number](<List & Array Leetcode Problem/A) Easy Level Problems/Missing_Number.py>), [Move zeros](<List & Array Leetcode Problem/A) Easy Level Problems/Move_zeros.py>), [Remove duplicates](<List & Array Leetcode Problem/A) Easy Level Problems/Remove_Duplicate.py>), [Right rotate array](<List & Array Leetcode Problem/A) Easy Level Problems/Right_rotate_Array.py>), [Second largest element](<List & Array Leetcode Problem/A) Easy Level Problems/Second_Largest.py>) |
 | Lists and Arrays - Medium | [Best time to buy and sell stock](<List & Array Leetcode Problem/B) Medium Level Problems/Buy_sell_Stock.py>), [Longest consecutive sequence](<List & Array Leetcode Problem/B) Medium Level Problems/Longest_Consecutive_Seq.py>), [Rearrange by sign](<List & Array Leetcode Problem/B) Medium Level Problems/ReArrange_By_Sign.py>), [Rotate matrix 90-degree clockwise](<List & Array Leetcode Problem/B) Medium Level Problems/Rotate_Matrix.py>), [Set matrix zeroes](<List & Array Leetcode Problem/B) Medium Level Problems/Set_Matrix_Zeros.py>), [Spiral order traversal](<List & Array Leetcode Problem/B) Medium Level Problems/Spiral_Order.py>), [Maximum subarray sum](<List & Array Leetcode Problem/B) Medium Level Problems/Subarray_max_sum.py>), [Two Sum](<List & Array Leetcode Problem/B) Medium Level Problems/Target_Sum.py>) |
 | Lists and Arrays - Hard | [3Sum](<List & Array Leetcode Problem/C) Hard Level Problems/3Sum.py>), [4Sum](<List & Array Leetcode Problem/C) Hard Level Problems/4Sum.py>) |
-| Singly Linked List | [Basic tasks: append, insertion, deletion, and traversal](<Singly Linked List/Introduction/Basic-tasks.py>), [Middle of a linked list](<Singly Linked List/Medium Problems/Middle_Of_LL.py>) |
+| Singly Linked List | [Basic tasks: append, insertion, deletion, and traversal](<Singly Linked List/Introduction/Basic-tasks.py>), [Detect a cycle](<Singly Linked List/Medium Problems/Detect_Cycle.py>), [Cycle length](<Singly Linked List/Medium Problems/Cycle_Length.py>), [Cycle starting node](<Singly Linked List/Medium Problems/Cycle_Starting.py>), [Middle of a linked list](<Singly Linked List/Medium Problems/Middle_Of_LL.py>), [Reverse a linked list](<Singly Linked List/Medium Problems/Reverse_LL.py>) |
 | Sorting | [Bubble sort](<Sorting-Algorithms/Bubble_sort.py>), [Insertion sort](<Sorting-Algorithms/Insertion_Sort.py>), [Merge sort](<Sorting-Algorithms/Merge_Sort.py>), [Quick sort](<Sorting-Algorithms/Quick_Sort.py>), [Selection sort - ascending](<Sorting-Algorithms/Selection-Sort/ascending_ord.py>), [Selection sort - descending](<Sorting-Algorithms/Selection-Sort/descending_ord.py>) |
 | Strings - Easy | [Isomorphic strings](<Strings/Easy_Level_Problems/Isomorphic_String.py>), [Largest odd number](<Strings/Easy_Level_Problems/Largest_Odd_Number.py>), [Longest common prefix](<Strings/Easy_Level_Problems/Longest_Common_Prefix.py>), [Remove outermost parentheses](<Strings/Easy_Level_Problems/Remove_outermost_paranthesis.py>), [Reverse words](<Strings/Easy_Level_Problems/Reverse_Words.py>), [Rotate string](<Strings/Easy_Level_Problems/Rotate_string.py>), [Valid anagram](<Strings/Easy_Level_Problems/Valid_Anagram.py>) |
 | Strings - Hard | [Maximum nesting depth of parentheses](<Strings/Hard_Level_Problems/Max_Nesting_Depth.py>), [Roman numeral to integer](<Strings/Hard_Level_Problems/Roman_to_Int.py>), [Sort characters by frequency](<Strings/Hard_Level_Problems/Sort_By_Freq.py>) |
@@ -141,7 +145,11 @@ Detailed notes for the Basic Math problems are available in the
 | Quick sort | `O(n log n)` average, `O(n^2)` worst case | `O(n log n)` for this implementation |
 | Selection sort | `O(n^2)` | `O(1)` |
 | Singly linked list append, traversal, insertion, and deletion | `O(n)` | `O(1)` auxiliary |
+| Detect a linked-list cycle | `O(n)` | `O(1)` |
+| Find linked-list cycle length | `O(n)` | `O(1)` |
+| Find linked-list cycle start | `O(n)` | `O(1)` |
 | Middle of a linked list | `O(n)` | `O(1)` |
+| Reverse a linked list | `O(n)` | `O(1)` |
 | Isomorphic strings | `O(n)` | `O(k)` |
 | Largest odd number from a numeric string | `O(n)` | `O(n)` including the returned substring |
 | Longest common prefix (current implementation) | `O(s m^2)` worst case | `O(m)` |
@@ -203,7 +211,11 @@ python "List & Array Leetcode Problem\B) Medium Level Problems\Spiral_Order.py"
 python "List & Array Leetcode Problem\C) Hard Level Problems\3Sum.py"
 python "List & Array Leetcode Problem\C) Hard Level Problems\4Sum.py"
 python "Singly Linked List\Introduction\Basic-tasks.py"
+python "Singly Linked List\Medium Problems\Cycle_Length.py"
+python "Singly Linked List\Medium Problems\Cycle_Starting.py"
+python "Singly Linked List\Medium Problems\Detect_Cycle.py"
 python "Singly Linked List\Medium Problems\Middle_Of_LL.py"
+python "Singly Linked List\Medium Problems\Reverse_LL.py"
 python "Strings\Easy_Level_Problems\Isomorphic_String.py"
 python "Strings\Easy_Level_Problems\Largest_Odd_Number.py"
 python "Strings\Easy_Level_Problems\Longest_Common_Prefix.py"
