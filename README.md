@@ -28,6 +28,14 @@ covered.
 |   |-- Rotated_array_1st.py
 |   |-- Search_Insert_Position.py
 |   `-- Search_Min.py
+|-- Doubly Linked List
+|   |-- Basic Operations
+|   |   |-- Basic_Methods.py
+|   |   `-- Reverse_A_DLL.py
+|   `-- Medium Level Problems
+|       |-- Pairs_Sum.py
+|       |-- Remove_Dupli.py
+|       `-- Remove_Occur.py
 |-- List & Array Leetcode Problem
 |   |-- A) Easy Level Problems
 |   |   |-- Largest_element_in_array.py
@@ -96,6 +104,7 @@ covered.
 | Lists and Arrays - Easy | [Largest element](<List & Array Leetcode Problem/A) Easy Level Problems/Largest_element_in_array.py>), [Linear search](<List & Array Leetcode Problem/A) Easy Level Problems/Linear_Search.py>), [Maximum consecutive ones](<List & Array Leetcode Problem/A) Easy Level Problems/Max_Consecutive_One.py>), [Merge two sorted arrays without duplicates](<List & Array Leetcode Problem/A) Easy Level Problems/Merge_2_sorted_arr.py>), [Missing number](<List & Array Leetcode Problem/A) Easy Level Problems/Missing_Number.py>), [Move zeros](<List & Array Leetcode Problem/A) Easy Level Problems/Move_zeros.py>), [Remove duplicates](<List & Array Leetcode Problem/A) Easy Level Problems/Remove_Duplicate.py>), [Right rotate array](<List & Array Leetcode Problem/A) Easy Level Problems/Right_rotate_Array.py>), [Second largest element](<List & Array Leetcode Problem/A) Easy Level Problems/Second_Largest.py>) |
 | Lists and Arrays - Medium | [Best time to buy and sell stock](<List & Array Leetcode Problem/B) Medium Level Problems/Buy_sell_Stock.py>), [Longest consecutive sequence](<List & Array Leetcode Problem/B) Medium Level Problems/Longest_Consecutive_Seq.py>), [Rearrange by sign](<List & Array Leetcode Problem/B) Medium Level Problems/ReArrange_By_Sign.py>), [Rotate matrix 90-degree clockwise](<List & Array Leetcode Problem/B) Medium Level Problems/Rotate_Matrix.py>), [Set matrix zeroes](<List & Array Leetcode Problem/B) Medium Level Problems/Set_Matrix_Zeros.py>), [Spiral order traversal](<List & Array Leetcode Problem/B) Medium Level Problems/Spiral_Order.py>), [Maximum subarray sum](<List & Array Leetcode Problem/B) Medium Level Problems/Subarray_max_sum.py>), [Two Sum](<List & Array Leetcode Problem/B) Medium Level Problems/Target_Sum.py>) |
 | Lists and Arrays - Hard | [3Sum](<List & Array Leetcode Problem/C) Hard Level Problems/3Sum.py>), [4Sum](<List & Array Leetcode Problem/C) Hard Level Problems/4Sum.py>) |
+| Doubly Linked List | [Basic operations: append, prepend, delete, and traversal](<Doubly Linked List/Basic Operations/Basic_Methods.py>), [Reverse a doubly linked list](<Doubly Linked List/Basic Operations/Reverse_A_DLL.py>), [Find pairs with a target sum](<Doubly Linked List/Medium Level Problems/Pairs_Sum.py>), [Remove duplicates from a sorted list](<Doubly Linked List/Medium Level Problems/Remove_Dupli.py>), [Remove all occurrences of a value](<Doubly Linked List/Medium Level Problems/Remove_Occur.py>) |
 | Singly Linked List | [Basic tasks: append, insertion, deletion, and traversal](<Singly Linked List/Introduction/Basic-tasks.py>), [Detect a cycle](<Singly Linked List/Medium Problems/Detect_Cycle.py>), [Cycle length](<Singly Linked List/Medium Problems/Cycle_Length.py>), [Cycle starting node](<Singly Linked List/Medium Problems/Cycle_Starting.py>), [Middle of a linked list](<Singly Linked List/Medium Problems/Middle_Of_LL.py>), [Group nodes by odd/even index](<Singly Linked List/Medium Problems/Odd_Even_LL.py>), [Remove nth node from end](<Singly Linked List/Medium Problems/Remove_Node.py>), [Reverse a linked list](<Singly Linked List/Medium Problems/Reverse_LL.py>) |
 | Sorting | [Bubble sort](<Sorting-Algorithms/Bubble_sort.py>), [Insertion sort](<Sorting-Algorithms/Insertion_Sort.py>), [Merge sort](<Sorting-Algorithms/Merge_Sort.py>), [Quick sort](<Sorting-Algorithms/Quick_Sort.py>), [Selection sort - ascending](<Sorting-Algorithms/Selection-Sort/ascending_ord.py>), [Selection sort - descending](<Sorting-Algorithms/Selection-Sort/descending_ord.py>) |
 | Strings - Easy | [Isomorphic strings](<Strings/Easy_Level_Problems/Isomorphic_String.py>), [Largest odd number](<Strings/Easy_Level_Problems/Largest_Odd_Number.py>), [Longest common prefix](<Strings/Easy_Level_Problems/Longest_Common_Prefix.py>), [Remove outermost parentheses](<Strings/Easy_Level_Problems/Remove_outermost_paranthesis.py>), [Reverse words](<Strings/Easy_Level_Problems/Reverse_Words.py>), [Rotate string](<Strings/Easy_Level_Problems/Rotate_string.py>), [Valid anagram](<Strings/Easy_Level_Problems/Valid_Anagram.py>) |
@@ -141,6 +150,12 @@ Detailed notes for the Basic Math problems are available in the
 | Spiral order traversal | `O(mn)` | `O(mn)` including the returned list |
 | 3Sum | `O(n^2)` after sorting | `O(1)` extra space |
 | 4Sum | `O(n^3)` after sorting | `O(1)` extra space |
+| Doubly linked list append, delete, and traversal | `O(n)` | `O(1)` auxiliary |
+| Doubly linked list prepend | `O(1)` | `O(1)` |
+| Reverse a doubly linked list | `O(n)` | `O(1)` |
+| Find target-sum pairs in a sorted doubly linked list | `O(n)` | `O(p)` for `p` returned pairs |
+| Remove duplicates from a sorted doubly linked list | `O(n)` | `O(1)` |
+| Remove all occurrences from a doubly linked list | `O(n)` | `O(1)` |
 | Bubble sort | `O(n^2)` worst case | `O(1)` |
 | Insertion sort | `O(n^2)` worst case | `O(1)` |
 | Merge sort | `O(n log n)` | `O(n)` |
@@ -190,6 +205,11 @@ python "Binary Search\Count_Occurrences.py"
 python "Binary Search\Rotated_array_1st.py"
 python "Binary Search\Rotated_II.py"
 python "Binary Search\Search_Min.py"
+python "Doubly Linked List\Basic Operations\Basic_Methods.py"
+python "Doubly Linked List\Basic Operations\Reverse_A_DLL.py"
+python "Doubly Linked List\Medium Level Problems\Pairs_Sum.py"
+python "Doubly Linked List\Medium Level Problems\Remove_Dupli.py"
+python "Doubly Linked List\Medium Level Problems\Remove_Occur.py"
 python "Sorting-Algorithms\Bubble_sort.py"
 python "Sorting-Algorithms\Insertion_Sort.py"
 python "Sorting-Algorithms\Merge_Sort.py"
