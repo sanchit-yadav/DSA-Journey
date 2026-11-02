@@ -19,6 +19,10 @@ covered.
 |   `-- Recursion
 |       |-- factorial.py
 |       `-- Is_str_Palindrome.py
+|-- Bit Manipulation
+|   |-- Min_Bit_Flips.py
+|   |-- Single_Number.py
+|   `-- Subset.py
 |-- Binary Search
 |   |-- 1st_last_occur.py
 |   |-- Count_Occurrences.py
@@ -100,6 +104,7 @@ covered.
 | Basic Math | [Palindrome number](<Basics of Programming/Basic Math/palindrome.py>), [Armstrong number](<Basics of Programming/Basic Math/armstrong_number.py>), [Print divisors](<Basics of Programming/Basic Math/print_divisors.py>) |
 | Recursion | [Factorial](<Basics of Programming/Recursion/factorial.py>), [String palindrome](<Basics of Programming/Recursion/Is_str_Palindrome.py>) |
 | Hashing | [Frequency counting with a dictionary](<Basics of Programming/Intro_to_hashing/store_frequency_in_dictionary.py>) |
+| Bit Manipulation | [Minimum bit flips](<Bit Manipulation/Min_Bit_Flips.py>), [Find the single number](<Bit Manipulation/Single_Number.py>), [Generate all subsets](<Bit Manipulation/Subset.py>) |
 | Binary Search | [Binary search introduction](<Binary Search/Intro_BS.py>), [Search insert position](<Binary Search/Search_Insert_Position.py>), [Floor and ceil](<Binary Search/Floor_and_Ceil.py>), [First and last occurrence](<Binary Search/1st_last_occur.py>), [Count occurrences](<Binary Search/Count_Occurrences.py>), [Rotated array search I](<Binary Search/Rotated_array_1st.py>), [Rotated array search II](<Binary Search/Rotated_II.py>), [Search minimum in rotated array](<Binary Search/Search_Min.py>) |
 | Lists and Arrays - Easy | [Largest element](<List & Array Leetcode Problem/A) Easy Level Problems/Largest_element_in_array.py>), [Linear search](<List & Array Leetcode Problem/A) Easy Level Problems/Linear_Search.py>), [Maximum consecutive ones](<List & Array Leetcode Problem/A) Easy Level Problems/Max_Consecutive_One.py>), [Merge two sorted arrays without duplicates](<List & Array Leetcode Problem/A) Easy Level Problems/Merge_2_sorted_arr.py>), [Missing number](<List & Array Leetcode Problem/A) Easy Level Problems/Missing_Number.py>), [Move zeros](<List & Array Leetcode Problem/A) Easy Level Problems/Move_zeros.py>), [Remove duplicates](<List & Array Leetcode Problem/A) Easy Level Problems/Remove_Duplicate.py>), [Right rotate array](<List & Array Leetcode Problem/A) Easy Level Problems/Right_rotate_Array.py>), [Second largest element](<List & Array Leetcode Problem/A) Easy Level Problems/Second_Largest.py>) |
 | Lists and Arrays - Medium | [Best time to buy and sell stock](<List & Array Leetcode Problem/B) Medium Level Problems/Buy_sell_Stock.py>), [Longest consecutive sequence](<List & Array Leetcode Problem/B) Medium Level Problems/Longest_Consecutive_Seq.py>), [Rearrange by sign](<List & Array Leetcode Problem/B) Medium Level Problems/ReArrange_By_Sign.py>), [Rotate matrix 90-degree clockwise](<List & Array Leetcode Problem/B) Medium Level Problems/Rotate_Matrix.py>), [Set matrix zeroes](<List & Array Leetcode Problem/B) Medium Level Problems/Set_Matrix_Zeros.py>), [Spiral order traversal](<List & Array Leetcode Problem/B) Medium Level Problems/Spiral_Order.py>), [Maximum subarray sum](<List & Array Leetcode Problem/B) Medium Level Problems/Subarray_max_sum.py>), [Two Sum](<List & Array Leetcode Problem/B) Medium Level Problems/Target_Sum.py>) |
@@ -123,6 +128,9 @@ Detailed notes for the Basic Math problems are available in the
 | Recursive factorial | `O(n)` | `O(n)` |
 | Recursive string palindrome | `O(n)` | `O(n)` |
 | Frequency counting | `O(n)` average | `O(k)` |
+| Minimum bit flips | `O(b)` | `O(1)` |
+| Find the single number with XOR | `O(n)` | `O(1)` |
+| Generate all subsets | `O(n * 2^n)` | `O(n * 2^n)` including the returned subsets |
 | Binary search | `O(log n)` | `O(1)` |
 | First and last occurrence | `O(log n)` | `O(1)` |
 | Count occurrences | `O(log n)` average | `O(1)` |
@@ -180,9 +188,9 @@ Detailed notes for the Basic Math problems are available in the
 | Roman numeral to integer | `O(n)` | `O(1)` |
 | Sort characters by frequency | `O(n + k log k)` | `O(n + k)` |
 
-Here, `d` is the number of digits, `n` is the input size, `k` is the number of
-distinct values, and `s` and `m` are the number of strings and maximum string
-length for the longest-common-prefix implementation.
+Here, `d` is the number of digits, `b` is the number of bits, `n` is the input
+size, `k` is the number of distinct values, and `s` and `m` are the number of
+strings and maximum string length for the longest-common-prefix implementation.
 
 The remove-duplicates solution expects the input array to be sorted and
 compacts unique values at the beginning of the same array. The second-largest
@@ -197,6 +205,9 @@ for it; the sorting scripts use built-in example arrays.
 python "Basics of Programming\Basic Math\palindrome.py"
 python "Basics of Programming\Recursion\factorial.py"
 python "Basics of Programming\Recursion\Is_str_Palindrome.py"
+python "Bit Manipulation\Min_Bit_Flips.py"
+python "Bit Manipulation\Single_Number.py"
+python "Bit Manipulation\Subset.py"
 python "Binary Search\Intro_BS.py"
 python "Binary Search\Search_Insert_Position.py"
 python "Binary Search\Floor_and_Ceil.py"
