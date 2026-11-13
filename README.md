@@ -23,7 +23,9 @@ covered.
 |   `-- Generate Subsequences Problems
 |       |-- Binary_String.py
 |       |-- Combination_Sum.py
-|       `-- Generate_Parentheses.py
+|       |-- Combination_Sum_II.py
+|       |-- Generate_Parentheses.py
+|       `-- Subset_Sums_I.py
 |-- Bit Manipulation
 |   |-- Min_Bit_Flips.py
 |   |-- Single_Number.py
@@ -108,7 +110,7 @@ covered.
 | --- | --- |
 | Basic Math | [Palindrome number](<Basics of Programming/Basic Math/palindrome.py>), [Armstrong number](<Basics of Programming/Basic Math/armstrong_number.py>), [Print divisors](<Basics of Programming/Basic Math/print_divisors.py>) |
 | Recursion | [Factorial](<Basics of Programming/Recursion/factorial.py>), [String palindrome](<Basics of Programming/Recursion/Is_str_Palindrome.py>) |
-| Advanced Recursion | [Generate binary strings without consecutive ones](<Advance Recursion/Generate Subsequences Problems/Binary_String.py>), [Combination sum](<Advance Recursion/Generate Subsequences Problems/Combination_Sum.py>), [Generate parentheses](<Advance Recursion/Generate Subsequences Problems/Generate_Parentheses.py>) |
+| Advanced Recursion | [Generate binary strings without consecutive ones](<Advance Recursion/Generate Subsequences Problems/Binary_String.py>), [Combination sum](<Advance Recursion/Generate Subsequences Problems/Combination_Sum.py>), [Combination sum II](<Advance Recursion/Generate Subsequences Problems/Combination_Sum_II.py>), [Generate parentheses](<Advance Recursion/Generate Subsequences Problems/Generate_Parentheses.py>), [Subset sums I](<Advance Recursion/Generate Subsequences Problems/Subset_Sums_I.py>) |
 | Hashing | [Frequency counting with a dictionary](<Basics of Programming/Intro_to_hashing/store_frequency_in_dictionary.py>) |
 | Bit Manipulation | [Minimum bit flips](<Bit Manipulation/Min_Bit_Flips.py>), [Find the single number](<Bit Manipulation/Single_Number.py>), [Generate all subsets](<Bit Manipulation/Subset.py>) |
 | Binary Search | [Binary search introduction](<Binary Search/Intro_BS.py>), [Search insert position](<Binary Search/Search_Insert_Position.py>), [Floor and ceil](<Binary Search/Floor_and_Ceil.py>), [First and last occurrence](<Binary Search/1st_last_occur.py>), [Count occurrences](<Binary Search/Count_Occurrences.py>), [Rotated array search I](<Binary Search/Rotated_array_1st.py>), [Rotated array search II](<Binary Search/Rotated_II.py>), [Search minimum in rotated array](<Binary Search/Search_Min.py>) |
@@ -139,7 +141,9 @@ Detailed notes for the Basic Math problems are available in the
 | Generate all subsets | `O(n * 2^n)` | `O(n * 2^n)` including the returned subsets |
 | Generate binary strings without consecutive ones | `O(n * F_(n+2))` | `O(n * F_(n+2))` including results, plus `O(n)` recursion |
 | Combination sum | `O(m * number_of_combinations)` | `O(target)` recursion stack, plus output |
+| Combination sum II | `O(m * number_of_combinations)` | `O(target)` recursion stack, plus output |
 | Generate balanced parentheses | `O(C(2n, n))` | `O(n)` recursion stack, plus output |
+| Subset sums I | `O(n * 2^n)` | `O(n * 2^n)` including output |
 | Binary search | `O(log n)` | `O(1)` |
 | First and last occurrence | `O(log n)` | `O(1)` |
 | Count occurrences | `O(log n)` average | `O(1)` |
@@ -218,7 +222,9 @@ python "Basics of Programming\Recursion\factorial.py"
 python "Basics of Programming\Recursion\Is_str_Palindrome.py"
 python "Advance Recursion\Generate Subsequences Problems\Binary_String.py"
 python "Advance Recursion\Generate Subsequences Problems\Combination_Sum.py"
+python "Advance Recursion\Generate Subsequences Problems\Combination_Sum_II.py"
 python "Advance Recursion\Generate Subsequences Problems\Generate_Parentheses.py"
+python "Advance Recursion\Generate Subsequences Problems\Subset_Sums_I.py"
 python "Bit Manipulation\Min_Bit_Flips.py"
 python "Bit Manipulation\Single_Number.py"
 python "Bit Manipulation\Subset.py"
